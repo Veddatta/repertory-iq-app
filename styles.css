@@ -1,0 +1,33 @@
+body { 
+    font-family: 'Inter', sans-serif;
+    /* Background Image */
+    background-image: url('https://i.postimg.cc/BbZNdw0V/Chat-GPT-Image-Aug-28-2025-07-11-49-PM.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+@keyframes fadeIn { 
+    from { opacity: 0; transform: translateY(10px); } 
+    to { opacity: 1; transform: translateY(0); } 
+}
+.fade-in { 
+    animation: fadeIn 0.5s ease-out forwards; 
+}
+.spinner { 
+    border: 4px solid rgba(255, 255, 255, 0.3); 
+    width: 24px; 
+    height: 24px; 
+    border-radius: 50%; 
+    border-left-color: #fff; 
+    animation: spin 1s ease infinite; 
+}
+@keyframes spin { 
+    0% { transform: rotate(0deg); } 
+    100% { transform: rotate(360deg); } 
+}
+
+/* Frosted glass effect for the main card */
+.backdrop-blur-xl {
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
